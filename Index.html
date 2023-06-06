@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.4.0-web/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="cabeca">
+
+        <a href=" " >
+            <img src="data:image/png;base64,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"
+            alt="" class="logo">
+        </a>
+
+        <nav class="barraMenu">
+            <a href="#home"> home </a>
+            <a href="#menu"> menu </a>
+            <a href="#produos"> produtos </a>
+            <a href="#contatos"> contatos </a>
+        </nav>
+
+        <div class="icones">
+
+            <div id="" class="">
+                <div id="relogio" class="relogio" onload="showTime()"></div>
+            </div>
+
+            <div class="fas fa-search" id="bt_pesquisar"> </div>
+
+
+        </div>
+
+        <div class="pesquisarFormulario">
+            <input type="pesquisar" id="caixaPesquisa" placeholder="pesquisar">
+            <label for="search-box" class=""></label>
+        </div>
+
+    </header>
+
+
+
+
+    <section class="home parallax1" id="home">
+
+        <div class="conteudo">
+            <h3> Nada melhor que um bom café </h3>
+            <p> para iniciar o dia bem </p>
+            <a href="#" class="botaoMenu"> comprar agora </a>
+        </div>
+
+    </section>
+
+    
+
+
+    <section class="menu" id="menu">
+
+        <h1 class="cabecaMenu"> nosso <span> menu </span> </h1>
+
+        <div class="caixa-conteiner">
+
+            <div class="caixa">
+                <img src="../IMG/coposCafe/Es Doppio.png" alt="">
+                <h3> doppio </h3>
+                <div class="preco"> R$12.99 <span> 15.99 </span> </div>
+                <a href="#" class="bt"> comprar </a>
+            </div>
+
+            <div class="caixa">
+                <img src="../IMG/coposCafe/Es Brigadeiro2.png" alt="">
+                <h3> brigadeiro </h3>
+                <div class="preco"> R$16.99 <span>  18.99</span> </div>
+                <a href="#" class="bt"> comprar </a>
+            </div>
+
+            <div class="caixa">
+                <img src="../IMG/coposCafe/Es Mcchiato.png" alt="">
+                <h3> machiato </h3>
+                <div class="preco"> R$18.99 <span> 20.99 </span> </div>
+                <a href="#" class="bt"> comprar </a>
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    <div class="conteinerCarro">
+      <button class="arrow-left control" aria-label="Previous image">
+        <i class="fa-duotone fa-backward"></i>
+      </button>
+      <button class="arrow-right control" aria-label="Next Image">
+        <i class="fa-duotone fa-forward"></i>
+      </button>
+      <div class="gallery-wrapper">
+        <div class="gallery">
+
+            
+          <img src="https://t4.ftcdn.net/jpg/02/28/47/67/240_F_228476716_6XIKhvoH9jSfzsgbAvhsQLTBIkZxXmMU.jpg"
+          alt="coffe Image" class="item current-item">
+
+          <img src="https://t4.ftcdn.net/jpg/02/55/91/67/240_F_255916794_PLWsW5bGfDkhviQ0YPrEJewDjLPdFjdV.jpg"
+          alt="coffe Image" class="item current-item">
+
+          <img src="https://t3.ftcdn.net/jpg/03/65/44/30/240_F_365443084_Si0h06lqXK813IOWgDrb2CjVU1iD7pcQ.jpg"
+          alt="coffe Image" class="item current-item">
+
+          <img src="https://t3.ftcdn.net/jpg/02/37/87/86/240_F_237878643_AHZIPh3c19PEQdV7OOY2jBYj0ZqzR2uS.jpg"
+          alt="Coffe Image" class="item current-item">
+
+          <img src="https://t3.ftcdn.net/jpg/02/82/27/28/240_F_282272834_mflK2hEWIPaAyTxzG36MeZfkFioIQ233.jpg"
+          alt="Coffe Image" class="item current-item">
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    <section class="produtos" id="produtos">
+
+        <h1 class="cabecaProdutos"> <span> Produtos </span> </h1>
+
+        <div class="caixa-conteiner">
+
+            <div class="caixa">
+                <div class="icones">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    
+                    <a href="#" class="fas fa-heart"></a>
+
+                </div>
+                <div class="imagem">
+                    <img src="https://m.media-amazon.com/images/I/61wX5aC6LjL._AC_SX569_.jpg" alt="">
+                </div>
+                <div class="conteudo">
+                    <h3> Cafeteira Espresso Oster </h3>
+                    <div class="estrelas">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="preco"> R$1.077,07 <span> 1.800,99 </span></div>
+                </div>
+            </div>
+
+            <div class="caixa">
+                <div class="icones">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+
+                </div>
+                <div class="imagem">
+                    <img src="https://m.media-amazon.com/images/I/61sN2QQC+4L._AC_SX569_.jpg" alt="">
+                </div>
+                <div class="conteudo">
+                    <h3> DELONGHI MAGNIFICA </h3>
+                    <div class="estrelas">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="preco"> R$4.281,99 <span> 5.500,99 </span></div>
+                </div>
+            </div>
+
+            <div class="caixa">
+                <div class="icones">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+
+                </div>
+                <div class="imagem">
+                    <img src="https://m.media-amazon.com/images/I/51GFyrWfdbS._AC_SY879_.jpg" alt="">
+                </div>
+                <div class="conteudo">
+                    <h3> Cafeteira Espresso Três, Passione </h3>
+                    <div class="estrelas">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="preco"> R$398,05 <span> 463,99 </span></div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <section class="contato" id="contato">
+
+        <h1 class="cabecaMenu"> <span> Fale </span> conosco </h1>
+
+        <div class="lista">
+
+            <iframe
+                src="https://www.google.com/maps/place/SENAI+S%C3%A3o+Jos%C3%A9/@-27.61927,-48.647575,15z/data=!4m6!3m5!1s0x952737bfeee48cf3:0xfc2bf869ade93f03!8m2!3d-27.61927!4d-48.647575!16s%2Fg%2F1tdbxygx?entry=ttu"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+            <form action="">
+                <h3> </h3>
+                <div class="btCaixa">
+                    <span class="fas fa-user"></span>
+                    <input type="text" placeholder="Name" maxlength="20" required>
+                </div>
+                <div class="btCaixa">
+                    <span class="fas fa-envelope"></span>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="btCaixa">
+                    <span class="fas fa-phone"></span>
+                    <input type="number" placeholder="Number"  max-width="10">
+                </div>
+                <input type="submit" value="contact now" class="bt">
+            </form>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <script src="../JS/Script.js"></script>
+</body>
+</html>

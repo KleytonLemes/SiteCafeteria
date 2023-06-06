@@ -1,0 +1,616 @@
+:root{
+    --main-color:#c8975b;
+    --black:#13131a;
+    --bg:#010103;
+    border:.1rem solid rgba(255,255,255,.3);
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+body {
+    background-color: #2f2f2f;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+.cabeca {
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: solid rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.cabeca .barraMenu a {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+} .cabeca .barraMenu a :hover {
+    color: #5a4242;
+}
+
+.icones {
+    display: flex;
+}
+
+.cabeca .icones div {
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.7rem;
+    margin-left: 2rem;
+}
+
+
+.cabeca .pesquisarFormulario {
+    position: absolute;
+    top: 115%;
+    right: 7%;
+    background: #fff;
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    
+    transform-origin: top;
+}
+
+.cabeca .pesquisarFormulario input {
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 1rem;
+    text-transform: none
+}
+
+.cabeca .pesquisarFormulario label {
+    cursor: pointer;
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+    color: var(--black);
+}
+
+
+.pesquisarFormulario {
+    display: none;
+}
+
+
+.logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+
+
+.esconido{
+    background: #C75534;
+}
+
+#pesquisar {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+.relogio {
+    letter-spacing: 7px;
+   
+
+
+}
+
+
+
+
+
+
+
+
+
+section {
+    padding: 2rem 7%;
+}
+
+.parallax1 {
+    background: url(https://images7.alphacoders.com/130/1302095.jpg) no-repeat;
+}
+
+.home {
+    
+    display: flex;
+    align-items: center;
+
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    
+} .home::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient(to bottom, #01010300 0, #00000000 40%, #000000);
+}
+
+.home .conteudo {
+    max-width: 87rem;
+    padding: 18%;
+}
+
+.home .conteudo h3 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.home .conteudo p{
+    font-size: 2rem;
+    font-weight: bolder;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #eee;
+}
+
+.botaoMenu {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.9rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+section {
+    padding: 0rem;
+}
+
+.cabecaMenu {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+    padding: 45px;
+}
+
+.barraMenu span {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.caixa {
+    border: 2px solid blue;
+}
+
+.menu .caixa-conteiner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.menu .caixa-conteiner .caixa {
+    padding: 5rem;
+    text-align: center;
+    border: var(--border);
+}
+
+.menu .caixa-conteiner .caixa img {
+    height: 17rem;
+}
+
+.menu .caixa-conteiner .caixa h3 {
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.menu .caixa-conteiner .caixa .preco {
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+}
+.menu .caixa-conteiner .caixa .preco span {
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.estrelas {
+    padding: 1.5rem;
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.menu .caixa-conteiner .caixa .conteudo .estrelas {
+    padding: 1.5rem;
+}
+
+.menu .caixa-conteiner .caixa .conteudo .estrelas i {
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.bt{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.9rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--main-color);
+    cursor: pointer;
+    border-radius: 30px;
+
+} .bt :hover {
+    background-color: #00000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+.conteinerCarro {
+    position: relative;
+    padding: 15px;
+    max-width: 85%;
+    margin: 0 auto;
+  }
+  
+  .gallery-wrapper {
+    padding: 47px;
+    overflow-x: auto;
+  }
+  
+  .arrow-left,
+  .arrow-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    font-size: 20px;
+    line-height: 250px;
+    width: 40px;
+    color: #fff;
+    transition: all 600ms ease-in-out;
+    background: linear-gradient(to left, transparent 0%, black 200%);
+    opacity: 0.1;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .arrow-left:hover,
+  .arrow-right:hover {
+    opacity: 1;
+  }
+  
+  .arrow-right {
+    right: 0;
+    left: auto;
+    text-align: right;
+    background: linear-gradient(to right, transparent 0%, black 200%);
+  }
+  
+  .gallery {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+  }
+  
+  .item {
+
+    height: 330px;
+    flex-shrink: 0;
+    transition: all 600ms ease-in-out;
+    opacity: 0.5;
+  }
+  
+  .current-item {
+    opacity: 1;
+  }
+  
+  /* This is from w3schools */
+  /* 
+  https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .gallery-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .gallery-wrapper {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  .cyan {
+    background: cyan;
+  }
+  
+  .deeppink {
+    background: deeppink;
+  }
+  
+  .turquoise {
+    background: turquoise;
+  }
+  
+  .darkblue {
+    background: darkblue;
+  }
+  
+  .purple {
+    background: purple;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cabecaProdutos {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.cabecaProdutos span {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.produtos .caixa-conteiner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.produtos .caixa-conteiner .caixa {
+    text-align: center;
+    border: var(--border);
+    padding: 2rem;
+    box-shadow: 3px 5px 1px #5a4242
+}
+
+.produtos .caixa-conteiner .caixa .icones a {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    border: var(--border);
+    color: #fff;
+    margin: 0.3rem;
+}
+
+
+.produtos .caixa-conteiner .caixa .imagem {
+    padding: 2.5rem 0;
+}
+
+.produtos .caixa-conteiner .caixa .imagem img {
+    height: 25rem;
+}
+
+.produtos .caixa-conteiner .caixa .conteudo h3 {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.produtos .caixa-conteiner .caixa .conteudo .preco {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.produtos .caixa-conteiner .caixa .conteudo .preco span {
+    text-decoration: line-through;
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+
+.cabecaMenu span {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.contato .lista {
+    display: flex;
+    background: var(--black);
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.contato .lista form {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.contato .lista form h3 {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.contato .lista form .btCaixa {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: var(--bg);
+    border: var(--border);
+}
+
+.contato .lista form .btCaixa span {
+    color: #fff;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.contato .lista form .btCaixa input {
+        width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+    text-transform: none;
+    background: none;
+}
+
